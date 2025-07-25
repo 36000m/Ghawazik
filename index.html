@@ -2558,57 +2558,6 @@ font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, He
 					}
 				</style>
 
-				<lit-dialog ${Gt(e=>this.handleSetDialogRef(e))} title="Made with Manus" width="358px">
-					<p class=${K("dialog-content")}>
-						AI-generated (possibly user-edited) content - please verify carefully and submit no personal information.
-					</p>
-					<p class=${K("dialog-content")}>
-						If you believe this content violates your rights or applicable laws,
-						<a target="_blank" href="${fe.host}/report?resourceType=3&shareUrl=${encodeURIComponent(window.location.href)}"
-							>you may submit a report for review.</a
-						>
-					</p>
-					<div slot="footer" class=${K("dialog-footer")}>
-						<button class=${K("dialog-button")} @click=${()=>{var e;return(e=this.dialogRef)==null?void 0:e.close()}}>Cancel</button>
-						<button
-							class=${He({[K("dialog-button")]:!0,[K("dialog-button-primary")]:!0})}
-							@click=${()=>this.handleClick()}
-						>
-							Create my website
-						</button>
-					</div>
-				</lit-dialog>
-
-				<div
-					class=${He({[K("root")]:!0})}
-					@click=${()=>{var e;(e=this.dialogRef)==null||e.show(),Wt({eventName:"manus_watermark_click"})}}
-				>
-					${ol} Made with Manus
-				</div>`:M`<style>
-				.${K("root")} {
-					z-index: 10000;
-					display: flex;
-					padding: 4px 4px 4px 12px;
-					align-items: center;
-					position: fixed;
-					right: 16px;
-					bottom: 16px;
-					border-radius: 999px;
-					background: var(--Button-primary-black);
-					display: flex;
-					height: 28px;
-					padding: 6px 8px;
-					justify-content: center;
-					align-items: center;
-					gap: 2px;
-					color: var(--text-white);
-					font-size: 12px;
-					line-height: 16px;
-					cursor: pointer;
-					user-select: none;
-					box-sizing: border-box;
-				}
-
 				.${K("hover-text")} {
 					display: none;
 				}
@@ -2714,7 +2663,7 @@ font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, He
 							>you may submit a report for review</a
 						>.
 					</p>
-				</div>
+				</div> 
 			</div>`}connectedCallback(){Wt({eventName:"manus_watermark_show"})}handleClick(){Wt({eventName:"manus_watermark_click"}),window.open(`${fe.host}/app?utm_source=manusspace`,"_blank")}handleClose(e){e.stopPropagation(),localStorage.setItem("embedClosed","true"),this.isClosed=!0,this.render(),Wt({eventName:"manus_watermark_close"})}handleSetDialogRef(e){e instanceof Vl&&(this.dialogRef=e)}render(){pt(this.template,this.shadowRoot)}}function oe(t){return`made-with-${t}`}class P2 extends HTMLElement{constructor(){super(),this.isMobile=!1,this.isMobile=Zc(),pt(this.template,this)}get template(){const e=()=>this.isMobile?M`<button class=${oe("btn")} @click=${()=>{var n;return(n=this.dialogRef)==null?void 0:n.show()}}>${ol} Made with Manus</button>
 					<lit-dialog ${Gt(n=>this.handleSetDialogRef(n))} title="Made with Manus">
 						<p>AI-generated (possibly user-edited) content - please verify carefully and submit no personal information.</p>
@@ -2744,7 +2693,7 @@ font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, He
 						data-tooltip="This user-generated doc was created with AI. Use with caution.
 Not an official Manus doc nor endorsed by Manus. Content may contain inaccuracies; double-check before use. Do not submit passwords, credit cards, or personal information."
 						>${Tb}</span
-					>
+					> 
 				</button>
 			</a>`;return M`<style>
 				.${oe("btn-link")} {
@@ -2838,13 +2787,14 @@ Not an official Manus doc nor endorsed by Manus. Content may contain inaccuracie
 					bottom: 20px;
 				}
 			</style>
-			${e()}`}handleSetDialogRef(e){e instanceof Vl&&(this.dialogRef=e)}}customElements.define("lit-textarea",cs);customElements.define("lit-popup",Vi);customElements.define("lit-dialog",Vl);customElements.define("manus-content-root",j2);customElements.define("make-with-manus",P2);customElements.define("footer-watermark",_2);yb();As(()=>{new MutationObserver(()=>{document.querySelector("manus-content-root")||document.body.appendChild(document.createElement("manus-content-root"))}).observe(document.body,{childList:!0,subtree:!0})});
+		${e()}`}handleSetDialogRef(e){e instanceof Vl&&(this.dialogRef=e)}}customElements.define("lit-textarea",cs);customElements.define("lit-popup",Vi);customElements.define("lit-dialog",Vl);customElements.define("manus-content-root",j2);customElements.define("make-with-manus",P2);customElements.define("footer-watermark",_2);yb();As(()=>{new MutationObserver(()=>{document.querySelector("manus-content-root")||document.body.appendChild(document.createElement("manus-content-root"))}).observe(document.body,{childList:!0,subtree:!0})});
 
-			</script><script
+			</script>
+			 <script
 			defer
 			data-domain="manus.space"
 			src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"
-		></script>
+		></script> 
 		<script>
 			window.plausible =
 				window.plausible ||
