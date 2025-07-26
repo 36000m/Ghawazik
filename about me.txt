@@ -1,0 +1,124 @@
+about me 
+
+index
+<!-- about -->
+<section class="about" id="about">
+  <h2 class="section-title">عني</h2>
+
+  <div class="about-container">
+    <div class="about-img">
+      <!-- ضع رابط صورتك الشخصية هنا -->
+      <img src="path/to/your-image.jpg" alt="صورة محمد العجمي">
+    </div>
+    
+    <div class="about-text">
+      <p>مرحباً! أنا محمد، مطور واجهات أمامية شغوف أحب تحويل الأفكار إلى تجارب رقمية تفاعلية وجميلة. بدأت رحلتي في عالم البرمجة من خلال الفضول لمعرفة كيف تعمل المواقع التي نستخدمها يومياً، وسرعان ما تحول هذا الفضول إلى شغف حقيقي بتصميم وتطوير واجهات مستخدم سهلة وجذابة.</p>
+      <p>أمتلك خبرة في التقنيات الأساسية لبناء الويب وأسعى دائماً لتعلم المزيد وتطوير مهاراتي. أستمتع بشكل خاص بالعمل على التفاصيل الصغيرة التي تحدث فرقاً كبيراً في تجربة المستخدم النهائية.</p>
+      
+      <h3>التقنيات التي أستخدمها:</h3>
+      <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <!-- يمكنك إضافة المزيد من المهارات هنا -->
+        <span>React</span>
+        <span>Git</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ about -->
+
+css
+
+
+ /* ==================
+   About Section
+   ================== */
+
+.about {
+  padding: 4rem 0;
+  background-color: #1a1a1a; /* نفس لون خلفية قسم المشاريع */
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #2C5F5D;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem; /* لإضافة هوامش على الشاشات الصغيرة */
+}
+
+.about-img {
+  flex-basis: 30%;
+  max-width: 250px;
+}
+
+.about-img img {
+  width: 100%;
+  border-radius: 50%; /* لجعل الصورة دائرية */
+  border: 3px solid #ff00ff; /* نفس لون التمييز في موقعك */
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.4);
+}
+
+.about-text {
+  flex-basis: 70%;
+  color: #ccc; /* لون نص فاتح يتناسب مع الخلفية */
+  line-height: 1.7;
+}
+
+.about-text h3 {
+  color: #fff;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skills span {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.skills span:hover {
+  background-color: #ff00ff; /* نفس لون التمييز عند المرور */
+  transform: translateY(-3px);
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .about-text {
+    margin-top: 2rem;
+  }
+
+  .skills {
+    justify-content: center;
+  }
+}

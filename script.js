@@ -188,6 +188,7 @@ function createFixedDepositCalculator() {
     `;
 }
 
+
 // Create Call Deposit Calculator HTML
 function createCallDepositCalculator() {
     return `
@@ -1107,6 +1108,7 @@ function initializeEducationSection() {
         });
     });
 }
+
 
 // Show educational content in modal
 function showEducationalContent(content) {

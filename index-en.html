@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>غوازيك - Ghawazik | دليلك المالي الشامل</title>
-	<link rel="icon" href="images/ghawazik-icon.png" type="image/png">
+    <title>Ghawazik | Your Complete Financial Guide</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -13,43 +12,27 @@
     <!-- Header -->
     <header class="header">
         <nav class="navbar">
-
-<div class="nav-container">
-    <div class="nav-logo">
-        <img src="images/logo.png" alt="شعار غوازيك" class="logo-icon">
-        <div class="logo-text">
-            <span class="logo-subtitle">Ghawazik</span>
-        </div>
-    </div>
-
-
-
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>Ghawazik</h1>
+                    <span class="logo-subtitle">Your Financial Guide</span>
+                </div>
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link active">الرئيسية</a>
+                        <a href="#home" class="nav-link active">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#calculators" class="nav-link">الحاسبات</a>
+                        <a href="#calculators" class="nav-link">Calculators</a>
                     </li>
-                  <!--  <li class="nav-item">
-                   <a href="#dashboard" class="nav-link">لوحة المعلومات</a> 
-                    </li> -->   
-                    <li class="nav-item"> 
-                        <a href="#education" class="nav-link">التعليم المالي</a>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link">Financial Education</a>
                     </li>
-
-                   
-
-       
-
-              
-
-               <!--    <li class="nav-item">
-                       <a href="#contact" class="nav-link">التواصل</a> 
-                    </li> 
-       <!--              <li class="nav-item">
-                         <a href="index-en.html" class="nav-link language-switch">English</a>  
-                    </li> -->
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link language-switch">العربية</a>
+                    </li>
                 </ul>
                 <div class="hamburger">
                     <span class="bar"></span>
@@ -64,529 +47,150 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">اكتشف أسرار المال مع غوازيك</h1>
-                <p class="hero-subtitle">في غوازيك، نغوص في أعماق الاقتصاد الرقمي والأسواق المالية لنحول تعقيداتها إلى دليل تفاعلي وبسيط. مهمتنا هي تمكينك من فهم الخدمات البنكية، العملات الرقمية، والأسهم، وكشف الفرص لبناء ثروتك. كل هذا من أجل رؤيتنا الأسمى: أن نكون المحرك الرئيسي لجيل عربي واعٍ، يمتلك الثقة والأدوات الكاملة لصناعة مستقبله وتحقيق استقلاله المالي.</p>
+                <h1 class="hero-title">Unlock Money Secrets with Ghawazik</h1>
+                <p class="hero-subtitle">A comprehensive digital platform offering interactive and simple guides to understand banking, digital currencies, stocks, and wealth building.</p>
                 <div class="hero-buttons">
-                    <a href="#calculators" class="btn btn-primary">ابدأ الحساب</a>
-                    <a href="#education" class="btn btn-secondary">تعلم المزيد</a>
+                    <a href="#calculators" class="btn btn-primary">Start Calculating</a>
+                    <a href="#education" class="btn btn-secondary">Learn More</a>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="hero-card">
                     <i class="fas fa-chart-line"></i>
-                    <h3>نمو مستدام</h3>
-                    <p>استثمارات ذكية</p>
+                    <h3>Sustainable Growth</h3>
+                    <p>Smart Investments</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Financial Quote Section -->
-    <section class="quote-section">
-        <div class="container">
-            <div class="quote-card">
-                <i class="fas fa-quote-right quote-icon"></i>
-                <blockquote class="quote-text">
-                    "الاستثمار الأفضل هو الاستثمار في نفسك. كلما تعلمت أكثر، كلما كسبت أكثر"
-                </blockquote>
-                <cite class="quote-author">- وارن بافيت</cite>
-            </div>
-        </div>
-    </section>
-
-    <!-- Calculators Section -->
-    <section id="calculators" class="calculators-section">
-        <div class="container">
-            <h2 class="section-title">الحاسبات المالية</h2>
-            <p class="section-subtitle">أدوات متقدمة لحساب استثماراتك وقروضك بدقة</p>
-            
-            <div class="calculators-grid">
-                <!-- Banking Calculators -->
-                <div class="calculator-category">
-                    <h3 class="category-title">الحسابات البنكية</h3>
-                    <div class="calculator-cards">
-                        <div class="calculator-card" data-calculator="fixed-deposit">
-                            <div class="card-icon">
-                                <i class="fas fa-piggy-bank"></i>
-                            </div>
-                            <h4 class="card-title">الوديعة الثابتة</h4>
-                            <p class="card-description">احسب عوائد الوديعة الثابتة من 6 أشهر إلى سنتين</p>
-                            <button class="btn btn-outline">احسب الآن</button>
-                        </div>
-
-                        <div class="calculator-card" data-calculator="call-deposit">
-                            <div class="card-icon">
-                                <i class="fas fa-hand-holding-usd"></i>
-                            </div>
-                            <h4 class="card-title">الوديعة تحت الطلب</h4>
-                            <p class="card-description">وديعة مرنة مع إمكانية الإضافة الشهرية</p>
-                            <button class="btn btn-outline">احسب الآن</button>
-                        </div>
-
-                        <div class="calculator-card" data-calculator="smart-savings">
-                            <div class="card-icon">
-                                <i class="fas fa-brain"></i>
-                            </div>
-                            <h4 class="card-title">حساب التوفير الذكي</h4>
-                            <p class="card-description">حساب توفير بفوائد تراكمية ذكية</p>
-                            <button class="btn btn-outline">احسب الآن</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <section id="financial-tips" class="tips-section">
-  <h2> نصائح مالية 💡</h2>
-  <p id="dailyTip">جارٍ تحميل النصيحة...</p>
-</section>
-
-
-                <!-- Loan Calculators -->
-                <div class="calculator-category">
-                    <h3 class="category-title">حاسبات القروض</h3>
-                    <div class="calculator-cards">
-                        <div class="calculator-card" data-calculator="personal-loan">
-                            <div class="card-icon">
-                                <i class="fas fa-user-tie"></i>
-                            </div>
-                            <h4 class="card-title">القرض الشخصي</h4>
-                            <p class="card-description">قروض شخصية لمدة تصل إلى 10 سنوات</p>
-                            <button class="btn btn-outline">احسب الآن</button>
-                        </div>
-
-                        <div class="calculator-card" data-calculator="home-loan">
-                            <div class="card-icon">
-                                <i class="fas fa-home"></i>
-                            </div>
-                            <h4 class="card-title">القرض السكني</h4>
-                            <p class="card-description">قروض سكنية لمدة تصل إلى 25 سنة</p>
-                            <button class="btn btn-outline">احسب الآن</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-        <!-- Investment Dashboard Section 
-        <section class="dashboard-section" id="dashboard">
-            <div class="container">
-                <h2 class="section-title">لوحة الاستثمارات</h2>
-                <p class="section-subtitle">تابع أحدث أسعار العملات الرقمية والأسهم العالمية والمحلية</p>
-                
-                <div class="investment-dashboard">
-                    <!-- Cryptocurrencies Card 
-                    <div class="investment-card crypto-card">
-                        <div class="card-header">
-                            <h3 class="card-title">
-                                <i class="fab fa-bitcoin"></i>
-                                العملات الرقمية
-                            </h3>
-                            <div class="market-status positive">
-                                <span class="status-dot"></span>
-                                السوق مفتوح
-                            </div>
-                        </div>
-                        
-                        <div class="investment-list">
-                            <div class="investment-item">
-                                <div class="item-info">
-                                    <span class="item-name">Bitcoin</span>
-                                    <span class="item-symbol">BTC</span>
-                                </div>
-                                <div class="item-price">
-                                    <span class="price">$43,250</span>
-                                    <span class="change positive">+2.5%</span>
-                                </div>
-                            </div>
-                            
-                            <div class="investment-item">
-                                <div class="item-info">
-                                    <span class="item-name">Ethereum</span>
-                                    <span class="item-symbol">ETH</span>
-                                </div>
-                                <div class="item-price">
-                                    <span class="price">$2,680</span>
-                                    <span class="change positive">+1.8%</span>
-                                </div>
-                            </div>
-                            
-                            <div class="investment-item">
-                                <div class="item-info">
-                                    <span class="item-name">Binance Coin</span>
-                                    <span class="item-symbol">BNB</span>
-                                </div>
-                                <div class="item-price">
-                                    <span class="price">$315</span>
-                                    <span class="change negative">-0.5%</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <button class="view-details-btn crypto-btn" data-type="crypto">
-                            <i class="fas fa-chart-line"></i>
-                            عرض التفاصيل
-                        </button>
-                    </div>
-                    
-                    <!-- Global Stocks Card 
-                    <div class="investment-card stocks-card">
-                        <div class="card-header">
-                            <h3 class="card-title">
-                                <i class="fas fa-globe-americas"></i>
-                                الأسهم العالمية
-                            </h3>
-                            <div class="market-status positive">
-                                <span class="status-dot"></span>
-                                NYSE مفتوح
-                            </div>
-                        </div>
-                        
-                        <div class="investment-list">
-                            <div class="investment-item">
-                                <div class="item-info">
-                                    <span class="item-name">Apple</span>
-                                    <span class="item-symbol">AAPL</span>
-                                </div>
-                                <div class="item-price">
-                                    <span class="price">$195.50</span>
-                                    <span class="change positive">+1.2%</span>
-                                </div>
-                            </div>
-                            
-                            <div class="investment-item">
-                                <div class="item-info">
-                                    <span class="item-name">Microsoft</span>
-                                    <span class="item-symbol">MSFT</span>
-                                </div>
-                                <div class="item-price">
-                                    <span class="price">$378.20</span>
-                                    <span class="change positive">+0.8%</span>
-                                </div>
-                            </div>
-                            
-                            <div class="investment-item">
-                                <div class="item-info">
-                                    <span class="item-name">Tesla</span>
-                                    <span class="item-symbol">TSLA</span>
-                                </div>
-                                <div class="item-price">
-                                    <span class="price">$248.90</span>
-                                    <span class="change negative">-2.1%</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <button class="view-details-btn stocks-btn" data-type="global-stocks">
-                            <i class="fas fa-chart-bar"></i>
-                            عرض التفاصيل
-                        </button>
-                    </div>
-                    
-                    <!-- Local Stocks Card 
-                    <div class="investment-card local-card">
-                        <div class="card-header">
-                            <h3 class="card-title">
-                                <i class="fas fa-building"></i>
-                                الأسهم المحلية (مسقط)
-                            </h3>
-                            <div class="market-status closed">
-                                <span class="status-dot"></span>
-                                السوق مغلق
-                            </div>
-                        </div>
-                        
-                        <div class="investment-list">
-                            <div class="investment-item">
-                                <div class="item-info">
-                                    <span class="item-name">بنك مسقط</span>
-                                    <span class="item-symbol">BKMB</span>
-                                </div>
-                                <div class="item-price">
-                                    <span class="price">0.425 ر.ع</span>
-                                    <span class="change positive">+1.5%</span>
-                                </div>
-                            </div>
-                            
-                            <div class="investment-item">
-                                <div class="item-info">
-                                    <span class="item-name">شركة النفط العمانية</span>
-                                    <span class="item-symbol">OOCC</span>
-                                </div>
-                                <div class="item-price">
-                                    <span class="price">0.380 ر.ع</span>
-                                    <span class="change positive">+0.7%</span>
-                                </div>
-                            </div>
-                            
-                            <div class="investment-item">
-                                <div class="item-info">
-                                    <span class="item-name">البنك الأهلي</span>
-                                    <span class="item-symbol">ABOB</span>
-                                </div>
-                                <div class="item-price">
-                                    <span class="price">0.195 ر.ع</span>
-                                    <span class="change negative">-0.3%</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <button class="view-details-btn local-btn" data-type="local-stocks">
-                            <i class="fas fa-chart-area"></i>
-                            عرض التفاصيل
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-		-->
 
     <!-- Education Section -->
     <section id="education" class="education-section">
         <div class="container">
-            <h2 class="section-title">التعليم المالي</h2>
-            <p class="section-subtitle">نصائح وإرشادات مالية من خبراء الاستثمار</p>
-            
+            <h2 class="section-title">Financial Education</h2>
+            <p class="section-subtitle">Financial advice and tips from investment experts</p>
+
             <div class="education-grid">
                 <div class="education-card" data-topic="banking-services">
                     <div class="card-icon">
                         <i class="fas fa-university"></i>
                     </div>
-                    <h3 class="card-title">الخدمات البنكية</h3>
-                    <p class="card-description">تعرف على أنواع الحسابات البنكية وكيفية اختيار الأنسب لك</p>
+                    <h3 class="card-title">Banking Services</h3>
+                    <p class="card-description">Learn about different bank accounts and how to choose the best one</p>
                 </div>
 
                 <div class="education-card" data-topic="digital-currencies">
                     <div class="card-icon">
                         <i class="fab fa-bitcoin"></i>
                     </div>
-                    <h3 class="card-title">العملات الرقمية</h3>
-                    <p class="card-description">دليل شامل لفهم العملات الرقمية وطرق الاستثمار الآمن</p>
+                    <h3 class="card-title">Digital Currencies</h3>
+                    <p class="card-description">A complete guide to understanding and investing in crypto safely</p>
                 </div>
 
                 <div class="education-card" data-topic="stock-market">
                     <div class="card-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3 class="card-title">الأسهم والاستثمار</h3>
-                    <p class="card-description">استراتيجيات الاستثمار في الأسهم وبناء محفظة متنوعة</p>
+                    <h3 class="card-title">Stocks & Investment</h3>
+                    <p class="card-description">Stock strategies and how to build a diversified portfolio</p>
                 </div>
 
                 <div class="education-card" data-topic="wealth-building">
                     <div class="card-icon">
                         <i class="fas fa-coins"></i>
                     </div>
-                    <h3 class="card-title">بناء الثروة</h3>
-                    <p class="card-description">خطط طويلة المدى لبناء الثروة والاستقلال المالي</p>
+                    <h3 class="card-title">Wealth Building</h3>
+                    <p class="card-description">Long-term plans to grow wealth and reach financial independence</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Calculator Modal -->
-    <div id="calculator-modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 id="modal-title">حاسبة مالية</h3>
-                <span class="close">&times;</span>
-            </div>
-            <div class="modal-body">
-                <div id="calculator-content">
-                    <!-- Calculator content will be loaded here -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Section 
+    <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
-          <!--   <h2 class="section-title">تواصل معنا</h2>
+            <h2 class="section-title">Contact Us</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>محمد العجمي</h3>
-                    <p>مؤسس منصة غوازيك</p>
+                    <h3>Mohammed Al-Ajmi</h3>
+                    <p>Founder of Ghawazik</p>
                     <div class="contact-details">
-                        <p><i class="fas fa-envelope"></i> Ghawazik@outlook.com</p>
+                        <p><i class="fas fa-envelope"></i> m91.qoot@gmail.com</p>
                         <p><i class="fas fa-phone"></i> +968 79090079</p>
                     </div>
-                    
+
                     <div class="social-links">
                         <a href="https://wa.me/96879090079" target="_blank" class="social-link whatsapp">
                             <i class="fab fa-whatsapp"></i>
-                            <span>واتساب</span>
+                            <span>WhatsApp</span>
                         </a>
-                        <a href="https://www.instagram.com/36000m?igsh=ODkzOGwyMHF2M3Nj&utm_source=qr" target="_blank" class="social-link instagram">
+                        <a href="https://www.instagram.com/36000m" target="_blank" class="social-link instagram">
                             <i class="fab fa-instagram"></i>
-                            <span>إنستغرام</span>
+                            <span>Instagram</span>
                         </a>
-                        <a href="https://www.snapchat.com/add/mr.36000?share_id=-pPP0kCcReuv1lzExJcBrQ&locale=en_OM" target="_blank" class="social-link snapchat">
+                        <a href="https://www.snapchat.com/add/mr.36000" target="_blank" class="social-link snapchat">
                             <i class="fab fa-snapchat"></i>
-                            <span>سناب شات</span>
+                            <span>Snapchat</span>
                         </a>
-                        <a href="https://www.tiktok.com/@36000m?_t=ZS-8yJqstAhvHe&_r=1" target="_blank" class="social-link tiktok">
+                        <a href="https://www.tiktok.com/@36000m" target="_blank" class="social-link tiktok">
                             <i class="fab fa-tiktok"></i>
-                            <span>تيك توك</span>
+                            <span>TikTok</span>
                         </a>
-                        <a href="https://x.com/36000m?s=21&t=VX-Za6RhpavDE5KjeFEf4Q" target="_blank" class="social-link twitter">
+                        <a href="https://x.com/36000m" target="_blank" class="social-link twitter">
                             <i class="fab fa-x-twitter"></i>
-                            <span>إكس</span>
+                            <span>X</span>
                         </a>
-                        <a href="https://www.threads.com/@36000m?igshid=NTc4MTIwNjQ2YQ==" target="_blank" class="social-link threads">
+                        <a href="https://www.threads.net/@36000m" target="_blank" class="social-link threads">
                             <i class="fab fa-threads"></i>
-                            <span>ثريدز</span>
+                            <span>Threads</span>
                         </a>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form id="contact-form">
-                        <div class="form-group">
-                       <label for="name">الاسم</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">البريد الإلكتروني</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">رقم الهاتف (اختياري)</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">الموضوع</label>
-                            <select id="subject" name="subject" required>
-                                <option value="">اختر الموضوع</option>
-                                <option value="استفسار عام">استفسار عام</option>
-                                <option value="استشارة مالية">استشارة مالية</option>
-                                <option value="مشكلة في الموقع">مشكلة في الموقع</option>
-                                <option value="اقتراح">اقتراح</option>
-                                <option value="شراكة">شراكة</option>
-                                <option value="أخرى">أخرى</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">الرسالة</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="اكتب رسالتك هنا..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">إرسال الرسالة</button> -->
-                    </form>
-                </div>
             </div>
         </div>
     </section>
-
-    <!-- Admin Panel (Hidden by default) -->
-    <section id="admin-panel" class="admin-panel" style="display: none;">
-        <div class="container">
-            <h2 class="section-title">لوحة التحكم</h2>
-            <div class="admin-content">
-                <div class="admin-login" id="admin-login">
-                    <h3>تسجيل الدخول</h3>
-                    <form id="admin-login-form">
-                        <div class="form-group">
-                            <label for="admin-password">كلمة المرور</label>
-                            <input type="password" id="admin-password" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary">دخول</button>
-                    </form>
-                </div>
-                
-                <div class="admin-dashboard" id="admin-dashboard" style="display: none;">
-                    <div class="admin-tabs">
-                        <button class="admin-tab active" data-tab="messages">الرسائل</button>
-                        <button class="admin-tab" data-tab="content">المحتوى</button>
-                        <button class="admin-tab" data-tab="settings">الإعدادات</button>
-                    </div>
-                    
-                    <div class="admin-tab-content">
-                        <div id="messages-tab" class="tab-pane active">
-                            <h4>رسائل التواصل</h4>
-                            <div id="messages-list">
-                                <p>لا توجد رسائل جديدة</p>
-                            </div>
-                        </div>
-                        
-                        <div id="content-tab" class="tab-pane">
-                            <h4>إدارة المحتوى</h4>
-                            <div class="content-management">
-                                <div class="form-group">
-                                    <label for="quote-text">إضافة اقتباس جديد</label>
-                                    <textarea id="quote-text" placeholder="نص الاقتباس"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <label for="quote-author">المؤلف</label>
-                                    <input type="text" id="quote-author" placeholder="اسم المؤلف">
-                                </div>
-                                <button class="btn btn-primary" onclick="addQuote()">إضافة اقتباس</button>
-                            </div>
-                        </div>
-                        
-                        <div id="settings-tab" class="tab-pane">
-                            <h4>إعدادات الموقع</h4>
-                            <div class="settings-management">
-                                <div class="form-group">
-                                    <label for="site-title">عنوان الموقع</label>
-                                    <input type="text" id="site-title" value="غوازيك">
-                                </div>
-                                <div class="form-group">
-                                    <label for="contact-email">بريد التواصل</label>
-                                    <input type="email" id="contact-email" value="Ghawazik@outlook.com">
-                                </div>
-                                <button class="btn btn-primary" onclick="saveSettings()">حفظ الإعدادات</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>غوازيك</h3>
-                    <p>بوصلتك الذكية نحو قرارات مالية حكيمة</p>
-                    
-                          </div>
+                    <h3>Ghawazik</h3>
+                    <p>A smart platform for financial education and investment</p>
+                </div>
                 <div class="footer-section">
-         
-          <!-- Footer -->
-                  <h4>القصة تبدأ هنا</h4>
+                    <h4>Quick Links</h4>
                     <ul>
-                                <p> قائد تقني ومطور برمجيات بخبرة في القطاع المالي، أمتلك منظوراً فريداً لبناء تطبيقات تجمع بين الموثوقية وتجربة المستخدم الاستثنائية. يكمن شغفي في تحويل التحديات المعقدة إلى واجهات بسيطة وأنيقة. أركز حالياً على صقل مهاراتي في تطوير الواجهات الأمامية لتقديم حلول مبتكرة ومؤثرة.</p>
-                 <!--       <li><a href="#home">الرئيسية</a></li>
-                        <li><a href="#calculators">الحاسبات</a></li>
-                        <li><a href="#education">التعليم المالي</a></li> -->
-               <!--              <li><a href="#contact">تواصل معنا</a></li>   -->
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#calculators">Calculators</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>تواصل معنا</h4>
-                    <p><i class="fas fa-envelope"></i> Ghawazik@outlook.com</p>
-                <!--      <p><i class="fas fa-phone"></i> +968 79090079</p>  -->
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> m91.qoot@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +968 79090079</p>
                     <div class="social-links">
                         <a href="https://wa.me/96879090079" class="social-link"><i class="fab fa-whatsapp"></i></a>
                         <a href="https://www.instagram.com/36000m" class="social-link"><i class="fab fa-instagram"></i></a>
                         <a href="https://x.com/36000m" class="social-link"><i class="fab fa-x-twitter"></i></a>
-                        <a href="https://www.snapchat.com/mr.36000" class="social-link"><i class="fab fa-snapchat"></i></a>
                         <a href="https://www.tiktok.com/@36000m" class="social-link"><i class="fab fa-tiktok"></i></a>
-						<a href="https://www.threads.com/@36000m" class="social-link"><i class="fab fa-threads"></i></a>
-				   </div>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy;  غوازيك - صُنع بكل شغف - جميع الحقوق محفوظة لمحمد العجمي 2025</p>
+                <p>&copy; 2025 Ghawazik - All Rights Reserved - Mohammed Al-Ajmi</p>
             </div>
         </div>
     </footer>
+</body>
+</html>
 
-    <script src="financial-content.js"></script>
+
+    <script src="financial-content-en.js"></script>
     <script src="investment-data.js"></script>
-    <script src="script.js"></script>
+    <script src="script-en.js"></script>
 <manus-content-root></manus-content-root><script>
 			var __manus_space_editor_info = {
 			spaceId : 'duheghop',
@@ -2578,6 +2182,57 @@ font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, He
 					}
 				</style>
 
+				<lit-dialog ${Gt(e=>this.handleSetDialogRef(e))} title="Made with Manus" width="358px">
+					<p class=${K("dialog-content")}>
+						AI-generated (possibly user-edited) content - please verify carefully and submit no personal information.
+					</p>
+					<p class=${K("dialog-content")}>
+						If you believe this content violates your rights or applicable laws,
+						<a target="_blank" href="${fe.host}/report?resourceType=3&shareUrl=${encodeURIComponent(window.location.href)}"
+							>you may submit a report for review.</a
+						>
+					</p>
+					<div slot="footer" class=${K("dialog-footer")}>
+						<button class=${K("dialog-button")} @click=${()=>{var e;return(e=this.dialogRef)==null?void 0:e.close()}}>Cancel</button>
+						<button
+							class=${He({[K("dialog-button")]:!0,[K("dialog-button-primary")]:!0})}
+							@click=${()=>this.handleClick()}
+						>
+							Create my website
+						</button>
+					</div>
+				</lit-dialog>
+
+				<div
+					class=${He({[K("root")]:!0})}
+					@click=${()=>{var e;(e=this.dialogRef)==null||e.show(),Wt({eventName:"manus_watermark_click"})}}
+				>
+					${ol} Made with Manus
+				</div>`:M`<style>
+				.${K("root")} {
+					z-index: 10000;
+					display: flex;
+					padding: 4px 4px 4px 12px;
+					align-items: center;
+					position: fixed;
+					right: 16px;
+					bottom: 16px;
+					border-radius: 999px;
+					background: var(--Button-primary-black);
+					display: flex;
+					height: 28px;
+					padding: 6px 8px;
+					justify-content: center;
+					align-items: center;
+					gap: 2px;
+					color: var(--text-white);
+					font-size: 12px;
+					line-height: 16px;
+					cursor: pointer;
+					user-select: none;
+					box-sizing: border-box;
+				}
+
 				.${K("hover-text")} {
 					display: none;
 				}
@@ -2683,7 +2338,7 @@ font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, He
 							>you may submit a report for review</a
 						>.
 					</p>
-				</div> 
+				</div>
 			</div>`}connectedCallback(){Wt({eventName:"manus_watermark_show"})}handleClick(){Wt({eventName:"manus_watermark_click"}),window.open(`${fe.host}/app?utm_source=manusspace`,"_blank")}handleClose(e){e.stopPropagation(),localStorage.setItem("embedClosed","true"),this.isClosed=!0,this.render(),Wt({eventName:"manus_watermark_close"})}handleSetDialogRef(e){e instanceof Vl&&(this.dialogRef=e)}render(){pt(this.template,this.shadowRoot)}}function oe(t){return`made-with-${t}`}class P2 extends HTMLElement{constructor(){super(),this.isMobile=!1,this.isMobile=Zc(),pt(this.template,this)}get template(){const e=()=>this.isMobile?M`<button class=${oe("btn")} @click=${()=>{var n;return(n=this.dialogRef)==null?void 0:n.show()}}>${ol} Made with Manus</button>
 					<lit-dialog ${Gt(n=>this.handleSetDialogRef(n))} title="Made with Manus">
 						<p>AI-generated (possibly user-edited) content - please verify carefully and submit no personal information.</p>
@@ -2713,7 +2368,7 @@ font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, He
 						data-tooltip="This user-generated doc was created with AI. Use with caution.
 Not an official Manus doc nor endorsed by Manus. Content may contain inaccuracies; double-check before use. Do not submit passwords, credit cards, or personal information."
 						>${Tb}</span
-					> 
+					>
 				</button>
 			</a>`;return M`<style>
 				.${oe("btn-link")} {
@@ -2807,14 +2462,13 @@ Not an official Manus doc nor endorsed by Manus. Content may contain inaccuracie
 					bottom: 20px;
 				}
 			</style>
-		${e()}`}handleSetDialogRef(e){e instanceof Vl&&(this.dialogRef=e)}}customElements.define("lit-textarea",cs);customElements.define("lit-popup",Vi);customElements.define("lit-dialog",Vl);customElements.define("manus-content-root",j2);customElements.define("make-with-manus",P2);customElements.define("footer-watermark",_2);yb();As(()=>{new MutationObserver(()=>{document.querySelector("manus-content-root")||document.body.appendChild(document.createElement("manus-content-root"))}).observe(document.body,{childList:!0,subtree:!0})});
+			${e()}`}handleSetDialogRef(e){e instanceof Vl&&(this.dialogRef=e)}}customElements.define("lit-textarea",cs);customElements.define("lit-popup",Vi);customElements.define("lit-dialog",Vl);customElements.define("manus-content-root",j2);customElements.define("make-with-manus",P2);customElements.define("footer-watermark",_2);yb();As(()=>{new MutationObserver(()=>{document.querySelector("manus-content-root")||document.body.appendChild(document.createElement("manus-content-root"))}).observe(document.body,{childList:!0,subtree:!0})});
 
-			</script>
-			 <script
+			</script><script
 			defer
 			data-domain="manus.space"
 			src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"
-		></script> 
+		></script>
 		<script>
 			window.plausible =
 				window.plausible ||
@@ -2826,85 +2480,6 @@ Not an official Manus doc nor endorsed by Manus. Content may contain inaccuracie
     			domain: window.location.host
   			}
 			})
-		</script>
-
-<script>
-  const tips = [
-    "وفّر أولًا، ثم اصرف ما تبقّى",
-    "تجنّب الديون ذات الفوائد المرتفعة",
-    "ابدأ الادخار اليوم، وليس غدًا",
-    "احتفظ بصندوق طوارئ يغطي 3-6 أشهر",
-    "ادفع لنفسك أولًا قبل الآخرين",
-    "اجعل الادخار عادة تلقائية",
-    "لا تستخدم بطاقة الائتمان دون خطة للسداد",
-    "استثمر في التعليم فهو أفضل أصل",
-    "قسّم دخلك 50/30/20 للادخار والرغبات والضروريات",
-    "تابع مصروفاتك لتعرف أين يذهب المال",
-    "قلّل النفقات التافهة؛ لها تأثير كبير",
-    "ضع أهدافًا مالية واضحة وابدأ بخطة",
-    "لا تشتري شيئًا فقط لأنه في التخفيض",
-    "الميزانية الشهرية أداة تحكم لا تقييد",
-    "الاستثمار المبكر يربح مع الوقت",
-    "ابتعد عن القروض الاستهلاكية",
-    "ثقّف نفسك ماليًا باستمرار",
-    "ادخر 10% على الأقل من كل دخل",
-    "ضع خطة للتقاعد مبكرًا",
-    "لا تعتمد على مصدر دخل واحد",
-    "اربط الأهداف المالية بتاريخ محدد.",
-    "راجع نفقاتك أسبوعيًا",
-    "حافظ على تصنيف جيد في تقريرك الائتماني",
-    "لا تجعل نمط حياتك يرتفع مع الدخل",
-    "اجعل الادخار جزءًا من أسلوب حياتك",
-    "الثراء ليس بكثرة الصرف، بل بالوعي",
-    "خصص ميزانية للترفيه دون إفراط",
-    "كن مسؤولاً عن قراراتك المالية",
-    "اطلب استشارة مالية عند الحاجة",
-    "كن صبورًا، الثروة تحتاج وقت",
-    "اشتري الأصول لا الخصوم",
-    "تأكد من وجود تأمين صحي",
-    "ادخر مكافأتك أو علاواتك",
-    "استغل المهارات لزيادة الدخل",
-    "تعلم أساسيات الاستثمار قبل الدخول فيه",
-    "تجنّب التوقيع على ما لا تفهمه ماليًا",
-    "احتفظ بسجل مالي شهري",
-    "الديون تنمو بسرعة، راقبها بدقة",
-    "ادفع أكثر من الحد الأدنى للقروض",
-    "لا تسرف في شراء الكماليات",
-    "الادخار أمان للمستقبل",
-    "تعامل مع المال كأداة لبناء حياة",
-    "كن قدوة لأبنائك ماليًا",
-    "استمتع بمالك دون إسراف",
-    "المعرفة المالية قوة",
-    "اقرأ كتابًا ماليًا كل شهر",
-    "حدد أولوياتك: الضروري ثم المهم",
-    "التحكم المالي = حرية مستقبلية",
-    "راجع اشتراكاتك الشهرية واحذف غير الضروري",
-    "الاستثمار ليس للأغنياء فقط.",
-    "كل ريال توفره، هو استثمار في مستقبلك",
-    "اصنع قراراتك بناءً على القيم، لا الإعلانات",
-    "ابدأ صغيرًا، لكن ابدأ",
-    "المثابرة أهم من الكمال المالي"
-  ];
-
-  const tipElement = document.getElementById("dailyTip");
-  let index = 0;
-
-  function showNextTip() {
-    tipElement.style.opacity = 0;
-    setTimeout(() => {
-      tipElement.textContent = tips[index];
-      tipElement.style.opacity = 1;
-      index = (index + 1) % tips.length;
-    }, 500);
-  }
-
-  window.addEventListener("DOMContentLoaded", () => {
-    showNextTip();
-setInterval(showNextTip, 5000); // كل 5 ثوانٍ
-  });
-</script>
-<script src="glossary.js"></script>
-
-    
-    </body>
+		</script></body>
 </html>
+

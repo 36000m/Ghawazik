@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محاكي السوق التعليمي - غوازيك</title>
+    <link rel="icon" href="images/ghawazik-icon.png" type="image/png">
+
+    <!-- ربط ملفات التنسيق -->
+    <link rel="stylesheet" href="styles.css"> <!-- يفترض وجود هذا الملف للتنسيقات العامة -->
+    <link rel="stylesheet" href="simulator-style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- مكتبة المخططات البيانية -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- ======================= الهيدر ======================= -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="images/logo.png" alt="شعار غوازيك" class="logo-icon">
+                    <div class="logo-text"><span class="logo-subtitle">Ghawazik</span></div>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">الرئيسية</a></li>
+                    <li class="nav-item"><a href="index.html#calculators" class="nav-link">الحاسبات</a></li>
+                    <li class="nav-item"><a href="index.html#education" class="nav-link">التعليم المالي</a></li>
+                    <li class="nav-item"><a href="simulator.html" class="nav-link active">محاكي السوق</a></li>
+                </ul>
+                <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ======================= المحتوى الرئيسي للمحاكي ======================= -->
+    <main>
+        <section class="simulator-section">
+            <div class="container">
+                <h2 class="section-title">محاكي السوق التفاعلي</h2>
+                <p class="section-subtitle">استثمر بأموال افتراضية، واصقل مهاراتك دون أي مخاطرة.</p>
+
+                <div class="disclaimer-note">
+                    <i class="fas fa-info-circle"></i>
+                    <span>هذا المحاكي هو أداة تعليمية فقط. جميع الأسعار والأرباح وهمية ولا تمثل تداولاً حقيقياً.</span>
+                </div>
+
+                <!--
+                    الجزء الأهم: هذه هي الكروت التي يجب تحديثها.
+                    تم التأكد من أن كل عنصر <p> لديه `id` فريد.
+                -->
+                <div class="portfolio-summary">
+                    <div class="summary-card">
+                        <div class="card-content">
+                            <h4>الرصيد النقدي</h4>
+                            <p id="cash-balance">$100,000.00</p>
+                        </div>
+                        <div class="card-icon-wrapper"><i class="fas fa-wallet"></i></div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="card-content">
+                            <h4>قيمة المحفظة</h4>
+                            <p id="portfolio-value">$0.00</p>
+                        </div>
+                        <div class="card-icon-wrapper"><i class="fas fa-chart-pie"></i></div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="card-content">
+                            <h4>إجمالي الأصول</h4>
+                            <p id="total-value">$100,000.00</p>
+                        </div>
+                        <div class="card-icon-wrapper"><i class="fas fa-sack-dollar"></i></div>
+                    </div>
+                </div>
+
+                <div class="calculator-category">
+                    <h3 class="category-title">أداء المحفظة بمرور الوقت</h3>
+                    <div class="chart-container">
+                        <canvas id="portfolio-chart"></canvas>
+                    </div>
+                </div>
+
+                <div class="calculator-category">
+                    <h3 class="category-title">البحث والتداول</h3>
+                    <div class="live-search-container">
+                        <input type="text" id="symbol-input" class="form-control" placeholder="ابحث بالرمز أو اسم الشركة..." autocomplete="off">
+                        <div id="search-suggestions" class="suggestions-dropdown"></div>
+                    </div>
+                    <div id="trade-panel" class="trade-panel-hidden"></div>
+                </div>
+
+                 <div class="market-snapshot">
+                    <h3 class="section-title">لمحة عن السوق العالمي</h3>
+                    <div id="global-market-movers" class="market-snapshot-container"></div>
+                    <h3 class="section-title secondary-title">لمحة عن السوق العماني</h3>
+                    <div id="oman-market-movers" class="market-snapshot-container"></div>
+                </div>
+
+                <div class="calculator-category">
+                    <h3 class="category-title">محفظتي الاستثمارية</h3>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>الشركة</th>
+                                    <th>الكمية</th>
+                                    <th>متوسط الشراء</th>
+                                    <th>السعر الحالي</th>
+                                    <th>إجمالي القيمة</th>
+                                    <th>الربح/الخسارة</th>
+                                </tr>
+                            </thead>
+                            <!--
+                                الجزء الأهم الثاني: جسم الجدول هذا (`tbody`)
+                                سيتم مسح محتوياته وإعادة بنائه بعد كل صفقة.
+                            -->
+                            <tbody id="portfolio-body">
+                                <!-- سيتم تعبئة الصفوف هنا بواسطة JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======================= الفوتر ======================= -->
+    <footer class="footer">
+        <!-- ... محتوى الفوتر كما هو ... -->
+    </footer>
+
+    <script src="simulator.js"></script>
+    <script src="script.js"></script> <!-- يفترض وجود هذا الملف لتشغيل قائمة الهامبرغر -->
+
+    <!-- ======================= الفوتر (منسوخ بالكامل من موقعك) ======================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>غوازيك</h3>
+                    <p>بوصلتك الذكية نحو قرارات مالية حكيمة</p>
+                </div>
+                <div class="footer-section">
+                    <h4>القصة تبدأ هنا</h4>
+                    <p>قائد تقني ومطور برمجيات بخبرة في القطاع المالي، أمتلك منظوراً فريداً لبناء تطبيقات تجمع بين الموثوقية وتجربة المستخدم الاستثنائية. يكمن شغفي في تحويل التحديات المعقدة إلى واجهات بسيطة وأنيقة. أركز حالياً على صقل مهاراتي في تطوير الواجهات الأمامية لتقديم حلول مبتكرة ومؤثرة.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>تواصل معنا</h4>
+                    <p><i class="fas fa-envelope"></i> Ghawazik@outlook.com</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/96879090079" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/36000m" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/36000m" class="social-link"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.snapchat.com/mr.36000" class="social-link"><i class="fab fa-snapchat"></i></a>
+                        <a href="https://www.tiktok.com/@36000m" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.threads.com/@36000m" class="social-link"><i class="fab fa-threads"></i></a>
+                   </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© غوازيك - صُنع بكل شغف - جميع الحقوق محفوظة لمحمد العجمي 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="simulator.js"></script>
+    <!-- مهم لتشغيل قائمة الهامبرغر في نسخة الجوال (يفترض أنه موجود) -->
+    <script src="script.js"></script>
+</body>
+</html>
